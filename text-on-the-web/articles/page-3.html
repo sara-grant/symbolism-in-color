@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="lad">
+        <div class="lad-before">
+          <div id="lad-h1">
+            <span class="lad-em">Life</span> <br>and Death
+          </div>
+        </div>
+        <div id="lad-appear" class="lad-article">
+        <h1 class="article-h1">Life and Death</h1>
+        <p class="article-p">
+            Cinnabar paint has been applied over the gold of this mask. Since ancient times we have associated <em>red</em> pigments with blood, integral to both life and mortality. Many cultures have incorporated <em>red</em> pigments into burials, sprinkling it through a grave or painting the deceased’s body with it. The Aztecs (circa 1300–1521) often imparted soul-force to a new artwork by bathing it in <em>red</em> pigment, ritually simulating the blood of childbirth.
+        </p>
+        </div>
+      </div>
+        <a href="page-4.html" class="nav-btn" id="next-btn">next</a>
+        <a href="page-2.html" class="nav-btn" id="prev-btn">prev</a>
+    </main>
+    
+    <nav>
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+      document.getElementById("lad-h1").addEventListener("mouseover", function() {
+          document.getElementById("lad-appear").style.opacity="1";
+  
+          document.getElementById("lad-h1").style.opacity="0";
+  
+        }
+      );
+  
+      document.getElementById("lad-h1").addEventListener("mouseout", function() 
+      {
+        document.getElementById("lad-appear").style.opacity="0";
+  
+      document.getElementById("lad-h1").style.opacity="1";
+            
+      }  
+    );
+  
+      </script>
+  </body>
+</html>

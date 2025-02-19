@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="danger">
+        <div class="danger-before">
+          <div id="danger-h1">
+            danger <br> danger <br> danger
+          </div>
+        </div>
+        <div id="danger-appear" class="danger-article">
+        <h1 class="article-h1">Danger</h1>
+        <p class="article-p">
+            <em>red</em> is the color of power and danger in the natural world. Our earliest ancestors experienced the light and warmth of the sun, the burning heat of fire, and sometimes the glow of molten lava. Poisonous animals and plants are often <em>red</em> as well. We have learned to treat <em>red</em> things with caution, and we choose <em>red</em> to color our warning signs, such as “Stop,” “Danger,” “Poison,” and “High Voltage.”
+        </p>
+        </div>
+      </div>
+        <a href="page-6.html" class="nav-btn" id="next-btn">next</a>
+        <a href="page-4.html" class="nav-btn" id="prev-btn">prev</a>
+    </main>
+    
+    <nav>
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+      document.getElementById("danger-h1").addEventListener("mouseover", function() {
+        document.getElementById("danger-appear").style.opacity="1";
+
+        document.getElementById("danger-h1").style.opacity="0";
+
+      }
+    );
+
+    document.getElementById("danger-h1").addEventListener("mouseout", function() 
+    {
+      document.getElementById("danger-appear").style.opacity="0";
+
+    document.getElementById("danger-h1").style.opacity="1";
+          
+    }  
+  );
+    </script>
+  </body>
+</html>

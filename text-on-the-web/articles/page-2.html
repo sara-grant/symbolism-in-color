@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <div class="blood">
+        <div class="blood-before">
+          <div id="blood-h1">
+            blood <br> blood <br> blood
+          </div>
+        </div>
+        <div id="blood-appear" class="blood-article">
+        <h1 class="article-h1">Blood</h1>
+        <p class="article-p">Blood is vital to life and sometimes all too apparent in death. Our visceral reaction to the sight of blood, or in this case raw meat, illustrates our deep relationship with <em>red</em>. The life-giving importance of blood is possibly the oldest explanation for humanity’s fascination with <em>red</em> dyes and pigments.
+        </p>
+        </div>
+      </div>
+        <a href="page-3.html" class="nav-btn" id="next-btn">next</a>
+        <a href="page-1.html" class="nav-btn" id="prev-btn">prev</a>
+    
+    </main>
+    
+    <nav>
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+    document.getElementById("blood-h1").addEventListener("mouseover", function() {
+        document.getElementById("blood-appear").style.opacity="1";
+
+        document.getElementById("blood-h1").style.opacity="0";
+
+      }
+    );
+
+    document.getElementById("blood-h1").addEventListener("mouseout", function() 
+    {
+      document.getElementById("blood-appear").style.opacity="0";
+
+    document.getElementById("blood-h1").style.opacity="1";
+          
+    }  
+  );
+
+    </script>
+
+  </body>
+</html>

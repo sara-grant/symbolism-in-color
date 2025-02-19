@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body id="index-body">
+    <main id="main">
+      <!-- before click -->
+        <div class="index-hover">
+        </div>
+        <button id="click">red</button>
+        <!-- appear after click -->
+         <div id="appear" style="display:none;">
+            <h1 id="title">SYMBOLISM IN COLOR: <a href="articles/overview.html" class="index-a">RED</a></h1> 
+         </div>
+    </main>
+    
+    <nav id="index-nav">
+        <hr>
+        <a href="index.html" class="nav-home" style="color: red;">home</a>
+        <a href="articles/about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+        let redBg = document.getElementById('index-body');
+
+        document.getElementById("click").addEventListener("click", function()
+    {
+        document.getElementById("appear").style.display="block";
+
+        document.getElementById("index-nav").style.display="block";
+
+        document.getElementById("click").style.display="none";
+
+        // redBg.style.backgroundColor = "white";
+
+        redBg.classList.add('change');
+    }
+    );
+
+    document.getElementById("click").addEventListener("mouseover", function() {
+      
+      var element = document.getElementById("index-body");
+      element.classList.add("bgChange");
+      var element = document.getElementById("click");
+      element.classList.add("bgChange");
+    }
+  );
+
+  document.getElementById("click").addEventListener("mouseout", function() {
+      
+      var element = document.getElementById("index-body");
+      element.classList.remove("bgChange");
+      var element = document.getElementById("click");
+      element.classList.remove("bgChange");
+    }
+  );
+  
+    </script>
+  </body>
+</html>

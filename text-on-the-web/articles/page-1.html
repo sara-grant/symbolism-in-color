@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body id="body">
+    <main>
+      <div class="evil">
+      <div class="evil-before">
+        <div id="evil-h1" class="evil-h1">
+           evil evil evil evil
+          <br> evil evil evil evil
+          <br> evil evil evil evil
+          <br> evil evil evil evil
+      </div>
+      </div>
+
+      <div id="evil-appear" class="evil-article">
+        <h1 class="article-h1">Evil</h1>
+        <p class="article-p">The Nile silt body of this jar is covered with a <em>red</em> ochre slip. For ancient Egyptians <em>red</em> symbolized the desert, fire, blood, and dangerous forces. It also represented life and regeneration, a necessary creative force to balance violent chaos to make an orderly world. The Egyptian word for <em>red</em>, desher, is the root word in the language for “desert,” “furious,” and “wrath.” To do <em>red</em> things” was to do evil things. <em>red</em> ink was often used to write the word evil, names of hostile monsters, and gods.
+        </p>
+      </div>
+      </div>
+
+        <a href="page-2.html" class="nav-btn" id="next-btn">next</a>
+        <a href="overview.html" class="nav-btn" id="prev-btn">prev</a>
+    </main>
+    
+    <nav id="nav">
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+
+      document.getElementById("evil-h1").addEventListener("mouseover", function() {
+        document.getElementById("evil-appear").style.opacity="1";
+
+        document.getElementById("evil-h1").style.opacity="0";
+
+      }
+    );
+
+    document.getElementById("evil-h1").addEventListener("mouseout", function() 
+    {
+      document.getElementById("evil-appear").style.opacity="0";
+
+    document.getElementById("evil-h1").style.opacity="1";
+          
+    }  
+  );
+
+ 
+
+      </script>
+  </body>
+</html>

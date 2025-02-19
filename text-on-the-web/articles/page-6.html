@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="paa">
+        <div class="paa-before">
+          <div id="paa-h1">
+             Power and <br>Authority
+          </div>
+      </div>
+      <div id="paa-appear" class="paa-article">
+        <h1 class="article-h1">Power and Authority
+        </h1>
+        <p class="article-p">
+            <em>red</em> has long been associated with the blood of war. Ares, the violent and destructive Greek god of war, is described as “blood-stained.” His Roman counterpart, Mars, also associated with <em>red</em>, represented military force that was necessary to secure peace. Here, Joan of Arc is portrayed as a Mars-like valorous warrior surrounded by <em>red</em>, which also foreshadows the blood of her Christian martyrdom.
+        </p>
+      </div>
+      </div>
+        <a href="../index.html" class="nav-btn" id="next-btn">home</a>
+        <a href="page-5.html" class="nav-btn" id="special-btn">prev</a>
+    </main>
+    
+    <nav>
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about">about</a>
+    </nav>
+
+    <script>
+      document.getElementById("paa-h1").addEventListener("mouseover", function() {
+        document.getElementById("paa-appear").style.opacity="1";
+
+        document.getElementById("paa-h1").style.opacity="0";
+
+      }
+    );
+
+    document.getElementById("paa-h1").addEventListener("mouseout", function() 
+    {
+      document.getElementById("paa-appear").style.opacity="0";
+
+    document.getElementById("paa-h1").style.opacity="1";
+          
+    }  
+  );
+    </script>
+  </body>
+</html>

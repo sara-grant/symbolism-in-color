@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+  </head>
+  <body id="overview-main">
+    <main>
+        <p id="overview">What does <em>red</em> mean to us?</p>
+
+        <a href="page-1.html" class="nav-btn" id="next-btn">next</a>
+
+    </main>
+    
+    <nav id="nav">
+        <hr>
+        <a href="../index.html" class="nav-home">home</a>
+        <a href="about.html" class="nav-about" >about</a>
+    </nav>
+
+    <script>
+
+      let overviewBg = document.getElementById('overview-main');
+      let overviewP = document.getElementById('overview');
+
+      let nav = document.getElementById('nav');
+
+      let nextBtn = document.getElementById('next-btn');
+
+      document.getElementById("overview").addEventListener("mouseover", function() {
+
+      overviewBg.classList.add('change');
+
+      overviewP.classList.add('change');
+
+      nav.classList.add('change');
+
+      nextBtn.classList.add('change');
+      });
+
+      document.getElementById("overview").addEventListener("mouseout", function() {
+
+      overviewBg.classList.remove('change');
+
+      overviewP.classList.remove('change');
+
+      nav.classList.remove('change');
+
+      nextBtn.classList.remove('change');
+      });
+    </script>
+  </body>
+</html>
